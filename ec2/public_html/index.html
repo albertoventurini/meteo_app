@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src="gallery.js"></script>
+</head>
+
+<body>
+
+<form>
+Select map:
+<select id="mapTypes" onchange="changeMapType()">
+  <option>Total Precipitation</option>
+  <option>Total Cloud Cover</option>
+</select>
+</form>
+
+
+
+<div style="margin: auto;">
+<center><img name="imgSrc" id="imgSrc"></center>
+</div>
+<!-- Controller -->
+<table width="400" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #000000; width:400px; margin: auto;">
+  <tr>
+	<td align="center"><a href="#" onClick="first();">First</a></td>
+    <td align="center"><a href="#" onClick="prev();">Previous</a></td>
+    <td align="center"><a href="#" onClick="next();">Next</a></td>
+    <td align="center"><a href="#" onClick="last();">Last</a></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
